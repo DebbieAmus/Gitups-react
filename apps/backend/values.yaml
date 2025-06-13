@@ -1,0 +1,20 @@
+replicaCount: 2
+
+image:
+  repository: your-dockerhub-username/frontend-app  # or backend-app
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: true
+  className: "nginx"
+  hosts:
+    - host: frontend.yourdomain.com  # or backend.yourdomain.com
+      paths:
+        - path: /
+          pathType: Prefix
+
