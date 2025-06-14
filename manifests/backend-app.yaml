@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/YourUsername/Gitops-React-Backend.git
+    repoURL: https://github.com/DebbieAmus/Gitops-React-Backend.git
     targetRevision: HEAD
     path: apps/backend
   destination:
